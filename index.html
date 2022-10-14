@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EN-CODE * 2</title>
+    <link rel="shortcut icon" href="imagens/back.gif" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+</head>
+
+<body onload="carregar()">
+
+    <!-- Titulo -->
+
+    <header>  
+        <h1 class="caixa">EN-CODE * 2</h1>
+    </header>  
+
+<main>
+    <form>
+
+    <!-- Dois primeiros botões -->
+
+    <section>
+        <input class="btnc" id="cesar" type="radio" name="opcao2" value="cifradecesar">
+        <label for="base64" class="txt">Cifra de Cesar</label>
+        <input class="btnc" id="base64" type="radio" name="opcao2" value="base64">
+        <label class="txt" for="base64">Base64</label>
+    </section>
+    <br>
+    <section>
+
+    <!-- primeira caixa de texto -->
+
+        <label class="txt"><strong>Mensagem a Codificar:</strong></label> 
+        <br>
+        <textarea name="mensagem" id="mensagem" cols="50" rows="10"  class="caixas" placeholder="Digite aqui o texto a ser codificado:"></textarea>
+    </section>
+
+    <!-- Incremento -->
+
+    <section id="incrementar" >
+        <label class="txt" for="incrementar">Incremento:</label>
+        <input type="number" id="incrementacao" value="1" name="incrementar" class="caixas">   
+    </section>
+    <!-- Dois segundos botões -->
+
+    <section>
+        <input class="btnc" type="radio" id="codificar" name="opcao" onclick="textoBtn()">
+        <label class="txt" for="codificar" >Codificar</label>
+        <input class="btnc" type="radio" id="decodificar" name="opcao" onclick="textoBtn()">
+        <label class="txt" for="decodificar">Decodificar</label>
+    </section>
+    <br>
+    <!-- Botão codificar -->
+
+        <button id="botao" class="botaoCode">Codificar</button>
+    </section>
+    <br><br>
+
+    <!-- Segunda caixa de texto -->
+
+        <label id="txtFinal" class="txt"><strong>Texto criptografado:</strong></label>
+        <br>
+         <textarea name="resultado" id="resultado" cols="50" rows="10"  class="caixas"></textarea>
+    </section>
+    </form>
+</main>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+body{
+    text-align: center;
+    background-image: url(../imagens/back.gif);
+}
+
+h1{
+    font-family: 'Silkscreen', cursive;
+    color: rgb(255, 0, 170);
+    font-size: 50px;
+
+}
+
+.caixas{
+    background-color: rgb(83, 56, 83);
+    color: white;
+    border-radius: 7px;
+}
+
+.txt{
+    color: white;
+    background-color: black;
+    font-size: 20px;
+}
+
+#txtFinal{
+    height: 10px;
+}
+
+.botaoCode{
+    background-color: rgb(184, 3, 184);
+    width: 130px;
+    height: 30px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.botaoCode:hover{
+    background-color: white;
+    color: purple;
+}
+
+.btnc{
+    background-color: black;
+}
